@@ -1,126 +1,223 @@
 <style lang="less">
 	.dw{
-	  position: absolute;
-	  top:0;
-	  right: 0;
-	  width:100px;
-	  height: 100%;
-	}
-	.wxSortPickerViewTag{
-	  background-color: #f1f1f1;
-	  font-size: 16px;
-	  font-weight: bold;
-	  color: #999999;
-	  line-height: 30px;
-	  height: 30px;
-	  padding: 0 15px;
-	}
-	.wxSortPickerViewItem{
-	  height: 40px;
-	  line-height: 40px;
-	  border-bottom: 1px solid #eee;
-	  margin-left: 15px;
-	  color: #444;
-	}
-	.hor{
-	  font-size: 14px;
-	  color: #999999;
-	  font-weight: 500;
-	  display: block;
-	  padding: 14px 25px 5px 0px;
-	}
-	.kuai{
-	  height: 30px;
-	  width: 28%;
-	  text-align: center;
-	  line-height: 30px;
-	  color: #444;
-	  font-weight: 500;
-	  display: inline-block;
-	  margin: 10px 10px 0 0;
-	  background: #fff;
-	  border: 1px solid #eee;
-	  border-radius: 2px;
-	}
-	.searchLetter{
-	  position: fixed;
-	  right: 0;
-	  width: 20px;
-	  height: 80%;
-	  text-align: center;
-	  justify-content: center;
-	  display: flex;
-	  flex-direction: column;
-	  color: #666;
-	  z-index: 1
-	}
-	.searchLetter view{
-	  height: 70rpx;
-	}
-	.touchClass{
-	  top: 50px;
-	  margin-top: 35px;
-	  right: 0;
-	  background-color: #fff;
-	  color: #1296db;
-	  font-weight: 700;
-	}
-	.showSlectedLetter{
-	  background-color: rgba(0, 0, 0,0.5);
-	  color: #fff;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  position: fixed;
-	  top:50%;
-	  left: 50%;
-	  margin: -50px;
-	  width: 100px;
-	  height: 100px;
-	  border-radius:10px;
-	  font-size: 26px;
-	  z-index: 1
-	}
-	.selection{
-	  display: flex;
-	  width: 100%;
-	  flex-direction: column;
-	}
-	.item_letter{
-	  display: flex;
-	  background-color: #f8f8f8;
-	  height: 30px;
-	  padding-left: 10px;
-	  align-items: center;
-	}
-	.item_city{
-	  display: flex;
-	  background-color: #fff;
-	  height: 40px;
-	  padding-left: 10px;
-	  align-items: center;
-	  border-bottom: 1px solid #f8f8f8
-	}
-	.gps{
-	  position: relative;
-	  height: 38px;
-	  border-bottom: 1px solid #ccc;
-	  border-top: 1px solid #ccc;
-	  line-height: 38px;
-	  padding-left: 15px;
-	  font-size: 16px;
-	}
-	.gpsif {
-	  font-size: 14px;
-	  color: #ccc;
-	}
+   position: absolute;
+   top:0;
+   right: 0;
+   width:100px;
+   height: 100%;
+ }
+ .wxSortPickerViewTag{
+   background-color: #f1f1f1;
+   font-size: 16px;
+   font-weight: bold;
+   color: #999999;
+   line-height: 30px;
+   height: 30px;
+   padding: 0 15px;
+ }
+ .wxSortPickerViewItem{
+   height: 40px;
+   line-height: 40px;
+   border-bottom: 1px solid #eee;
+   margin-left: 15px;
+   color: #444;
+ }
+ .hor{
+   font-size: 14px;
+   color: #999999;
+   font-weight: 500;
+   display: block;
+   padding: 14px 25px 5px 0px;
+ }
+ .kuai{
+   height: 30px;
+   width: 28%;
+   text-align: center;
+   line-height: 30px;
+   color: #444;
+   font-weight: 500;
+   display: inline-block;
+   margin: 10px 10px 0 0;
+   background: #fff;
+   border: 1px solid #eee;
+   border-radius: 2px;
+ }
+ .searchLetter{
+   position: fixed;
+   right: 0;
+   width: 20px;
+   height: 80%;
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   color: #666;
+   z-index: 1
+ }
+ .searchLetter view{
+   height: 70rpx;
+ }
+ .touchClass{
+   top: 38px;
+   margin-top: 35px;
+   right: 0;
+   background-color: #fff;
+   color: #1296db;
+   font-weight: 700;
+ }
+.showSlectedLetter{
+ background-color: rgba(0, 0, 0,0.5);
+ color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ top:50%;
+ left: 50%;
+ margin: -50px;
+ width: 100px;
+ height: 100px;
+ border-radius:10px;
+ font-size: 26px;
+ z-index: 1;
+}
+.selection{
+ display: flex;
+ width: 100%;
+ flex-direction: column;
+}
+.item_letter{
+ display: flex;
+ background-color: #f8f8f8;
+ height: 30px;
+ padding-left: 10px;
+ align-items: center;
+}
+.item_city{
+ display: flex;
+ background-color: #fff;
+ height: 40px;
+ padding-left: 10px;
+ align-items: center;
+ border-bottom: 1px solid #f8f8f8
+}
+.gps{
+ position: relative;
+ height: 38px;
+ border-bottom: 1px solid #ccc;
+ border-top: 1px solid #ccc;
+ line-height: 38px;
+ padding-left: 15px;
+ font-size: 16px;
+}
+.gpsif {
+ margin-left: 6px;
+ font-size: 14px;
+ color: #ccc;
+}
+.searchinput {
+  position: relative;
+  height: 38px;
+  border: 1px solid #ccc;
+  line-height: 38px;
+  font-size: 16px;
+  width: 75%;
+  border-redius: 15%;
+  line-height: 38px;
+}
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #EFEFF4;
+  border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC;
+}
+.weui-icon-search {
+  margin-right: 8px;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__text {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9B9B9B;
+  background: #FFFFFF;
+  line-height: 28px;
+}
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09BB07;
+  white-space: nowrap;
+}
+
 </style>
 <template>
-	<view class="gps">
-		{{city}} <text class="gpsif">GPS定位</text>
+  <!-- <input class="searchinput" placeholder="" auto-focus/> -->
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="输入城市名称或拼音查询" value="{{ inputVal }}" auto-focus/>
+        <view class="weui-icon-clear" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="gps">
+    {{city}} <text class="gpsif">GPS定位</text>
 		<view class="dw" catchtap ="cxgps">
-			<image style="width: 30px; height: 30px;position: absolute;top: 50%;left:40px;margin-top: -15px " src="{{src}}"></image>
-		</view>
+      <image style="width: 30px; height: 30px;position: absolute;top: 50%;left:40px;margin-top: -15px " src="{{src}}"></image>
+    </view>
 	</view>
 
 	<block wx:if="{{isShowLetter}}">
@@ -135,7 +232,7 @@
 
 		<view class="selection" wx:for="{{cityList}}" wx:key="{{item.initial}}"  id="{{item.initial}}">
 			<block wx:if="{{index===0}}" >
-				<block wx:if="{{cityArr.length}}" >
+				<!-- <block wx:if="{{cityArr.length}}" >
 					<view style="margin-left: 15px">
 						<text class="hor" >历史访问</text>
 						<view bindtap = "wxSortPickerViewItemTap">
@@ -144,7 +241,7 @@
 							</block>
 						</view>
 					</view>
-				</block>
+				</block> -->
 
 				<view style="margin-left: 15px;margin-bottom: 15px">
 					<text class="hor" >国内热门城市</text>
@@ -186,38 +283,39 @@
   	components = {}
 
   	data = {
-  		searchLetter: [],
-  		showLetter: "",
-  		winHeight: 0,
-  		tHeight: 0,
-  		bHeight: 0,
-  		startPageY: 0,
-  		cityList: [],
-  		isShowLetter: false,
-  		scrollTop: 0,
-  		city: "",
-  		cityArr: [],
-  		src: './dw.png'
-  	}
+      inputVal: '',
+      searchLetter: [],
+      showLetter: "",
+      winHeight: 0,
+      tHeight: 0,
+      bHeight: 0,
+      startPageY: 0,
+      cityList: [],
+      isShowLetter: false,
+      scrollTop: 0,
+      city: "",
+      cityArr: [],
+      src: './dw.png'
+    }
 
-  	computed = {}
+    computed = {}
 
-  	setScrollTop(that, showLetter) {
-  		let scrollTop = 0
-  		let cityList = that.cityList
-  		let cityCount = 0
-  		let initialCount = 0
-  		for (let i = 0; i < cityList.length; i++) {
-  			if (showLetter == cityList[i].initial) {
-  				scrollTop = initialCount * 30 + cityCount * 41;
-  				break
-  			} else {
-  				initialCount++
-  				cityCount += cityList[i].cityInfo.length
-  			}
-  		}
-  		this.scrollTop = this.scrollTop - 1558
-  	}
+    setScrollTop(that, showLetter) {
+      let scrollTop = 0
+      let cityList = that.cityList
+      let cityCount = 0
+      let initialCount = 0
+      for (let i = 0; i < cityList.length; i++) {
+       if (showLetter == cityList[i].initial) {
+        scrollTop = initialCount * 30 + cityCount * 41;
+        break
+      } else {
+        initialCount++
+        cityCount += cityList[i].cityInfo.length
+      }
+    }
+    this.scrollTop = this.scrollTop - 1558
+  }
   	nowLetter(pageY, that) { //当前选中的信息
   		let letterData = this.searchLetter
   		let bHeight = 0
@@ -255,23 +353,58 @@
   		})
   	}
 
-  	methods = {
-  		searchStart(e) {
-  			let showLetter = e.currentTarget.dataset.letter
-  			let pageY = e.touches[0].pageY
-  			this.setScrollTop(this, showLetter)
-  			this.nowLetter(pageY, this)
-  			this.showLetter = showLetter
-  			this.startPageY = pageY
-  			this.isShowLetter = true
-  		},
-  		searchMove(e) {
-  			let pageY = e.touches[0].pageY
-  			let startPageY = this.startPageY
-  			let tHeight = this.tHeight
-  			let bHeight = this.bHeight
-  			let showLetter = 0
-  			console.log(pageY)
+    search() {
+      console.log('search')
+      // if (!this.inputVal) return
+      //   App.HttpService.search({
+      //     keyword: this.inputVal
+      //   })
+      // .then(res => {
+      //   const data = res.data
+      //   console.log(data)
+      //   if (data.meta.code == 0) {
+      //     this.setData({
+      //       items: data.data
+      //     })
+      //   }
+      // })
+    }
+
+    methods = {
+      clearInput() {
+        this.setData({
+          inputVal: ''
+        })
+      },
+      inputTyping(e) {
+        this.setData({
+          inputVal: e.detail.value
+        })
+        this.search()
+      },
+      redirectTo(e) {
+        console.log(e)
+        App.WxService.redirectTo('/pages/index/index', {
+          keyword: e.currentTarget.dataset.keyword
+        })
+      },
+      searchStart(e) {
+       let showLetter = e.currentTarget.dataset.letter
+       let pageY = e.touches[0].pageY
+       this.setScrollTop(this, showLetter)
+       this.nowLetter(pageY, this)
+       this.showLetter = showLetter
+       this.startPageY = pageY
+       console.log('start')
+       this.isShowLetter = true
+     },
+     searchMove(e) {
+       let pageY = e.touches[0].pageY
+       let startPageY = this.startPageY
+       let tHeight = this.tHeight
+       let bHeight = this.bHeight
+       let showLetter = 0
+       console.log(pageY)
   			if (startPageY - pageY > 0) { //向上移动
   				if (pageY < tHeight) {
   					// showLetter=this.mateLetter(pageY,this);
@@ -287,21 +420,24 @@
   		searchEnd(e) {
   			console.log(e)
   			// let showLetter=e.currentTarget.dataset.letter;
-  			setTimeout(function() {
-  				this.isShowLetter = false
-  			}, 1000)
-  		},
-  		bindScroll(e) {
-  			console.log(e.detail)
-  		},
-  		bindCity(e) {
-  			let city = e.currentTarget.dataset.city
-  			this.city = city
-  		},
-  		wxSortPickerViewItemTap(e) {
-  			console.log(e)
-  			let city = e.target.dataset.text
-  			this.city = city
+        // setTimeout(function() {
+        //   this.$apply(() => {
+          console.log('end')
+          this.isShowLetter = false
+        //   })
+        // }, 1000)
+      },
+      bindScroll(e) {
+       console.log(e.detail)
+     },
+     bindCity(e) {
+       let city = e.currentTarget.dataset.city
+       this.city = city
+     },
+     wxSortPickerViewItemTap(e) {
+       console.log(e)
+       let city = e.target.dataset.text
+       this.city = city
   			//可以跳转了
   			console.log('选择了城市：', city)
   		},
@@ -319,8 +455,8 @@
   						url: url,
   						success(data) {
   							console.log(data.data)
-  							if (data.data.status === 0) {
-  								this.city = data.data.result.address_component.city
+  							if (data.status === 0) {
+  								this.city = data.result.address_component.city
   							} else {
   								this.city = '定位失败'
   							}
@@ -345,7 +481,8 @@
   		this.cityArr = cityArr
   		this.city = c
   		// 生命周期函数--监听页面加载
-  		let searchLetter = city.searchLetter
+      let searchLetter = city.searchLetter
+  		// let searchLetter = ['搜索','定位','热门'].concat(city.searchLetter)
   		let cityList = city.cityList()
 
   		let sysInfo = wx.getSystemInfoSync()
