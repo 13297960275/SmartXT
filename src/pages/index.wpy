@@ -22,6 +22,8 @@
       <view class="userinfo-nickname">{{ userInfo.nickName }}</view>
     </view>
 
+    <view @tap="go2city">城市选择</view>
+
     <panel>
       <view class="title" slot="title">测试数据绑定</view>
 
@@ -166,6 +168,9 @@
     }
 
     methods = {
+      go2city () {
+        this.$redirect({url:'./citySelect'})
+      },
       plus () {
         this.mynum++
       },

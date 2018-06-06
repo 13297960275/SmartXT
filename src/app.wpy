@@ -1,4 +1,6 @@
 <style lang="less">
+@import "./style/weui.less";
+
 .container {
   height: 100%;
   display: flex;
@@ -17,7 +19,8 @@ export default class extends wepy.app {
   config = {
     pages: [
       'pages/index',
-      'pages/citySelect'
+      'pages/citySelect',
+      'pages/switchCity'
     ],
     window: {
       backgroundTextStyle: 'light',
